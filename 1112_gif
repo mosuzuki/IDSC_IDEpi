@@ -1,0 +1,37 @@
+#Optional R code for creating mycoplasma forecasts.GIF
+
+library("ggplot2")
+library("forecast")
+library("tseries")
+library("purrr")
+library("magick")
+library("magrittr")
+
+data <- read.csv("dat2.csv")
+
+data$yw = data$year*100+data$week
+yw = data$yw
+
+ggplot(data, aes(yw, case)) + geom_line() + scale_x_date('week')  + ylab("Mycoplasma") +
+  xlab("")
+
+start=201625
+
+for(i in 0:12){
+  ts = subset(data, yw<start+i)
+  case.ts = ts(ts$case, start=c(2009,1), frequency=52) 
+  arimafit <- auto.arima(case.ts, ic="aic", seasonal = T)
+  fcast <- forecast(arimafit, h=6)
+  autoplot(fcast, xlim=c(2015, 2017), ylim=c(0, 2.0), xlab="", ylab="cases", main="Mycoplasma forecasts using ARIMA model, Japan")
+  ggsave(file = paste0("C:/Users/xxxxx/charts/",start+i,".jpg"), units = "in", dpi = 150)
+}
+
+setwd("C:/Users/XXXXX/charts/")
+
+list.files(pattern = "*.jpg", full.names = T) %>% 
+  map(image_read) %>% 
+  image_join() %>% 
+  image_animate(fps=2) %>% 
+  image_write("myco.gif") 
+
+#########
