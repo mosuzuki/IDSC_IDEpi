@@ -1,6 +1,7 @@
 # IDSC/Infectious disease epidemiology 
 
 | Date | Time | Venue | Topic |
+| --- | --- | --- | --- |
 |2019-9-3	| 1800-1900	| NIID B1	| Introduction to STATA I |
 
 ### 2019-9-10 1800-1900	NIID B1	Introduction to STATA II 
