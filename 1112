@@ -1,12 +1,7 @@
-#install.packages("forecast")
-#install.packages("tseries")
 library(forecast)
 library(tseries)
 
-
 #stock price
-
-setwd("C:/Users/xxxxx/")
 dat1 <- read.csv("dat1.csv")
 
 summary(dat1)
@@ -19,7 +14,7 @@ pacf(dat1$price)
 #Check stationarity
 adf.test(dat1$price, alternative = "stationary")
 
-#Differenciate
+#Differencing
 d1 = diff(dat1$price, differences = 1)
 plot.ts(d1)
 
@@ -92,7 +87,7 @@ fcast <- forecast(fit4, h=20)
 plot(fcast)
 
 
-#Mycoplasma#
+#Mycoplasma
 
 dat2 <- read.csv("dat2.csv")
 
@@ -106,7 +101,7 @@ pacf(dat2$case)
 #Check stationarity
 adf.test(dat2$case, alternative = "stationary")
 
-#Differenciate
+#Differencing
 md1 = diff(dat2$case, differences = 1)
 plot.ts(md1)
 adf.test(md1, alternative = "stationary")
