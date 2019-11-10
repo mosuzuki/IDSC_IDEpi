@@ -1,0 +1,62 @@
+#White noise=random process
+#normal distribution
+x <- rnorm(1000,0,1)
+ts.plot(x)
+hist(x)
+acf(x)
+acf(x, type="partial")
+pacf(x)
+
+#poisson distribution
+y <- rpois(1000, lambda = 5)
+ts.plot(y)
+hist(y)
+acf(y)
+pacf(y)
+
+#Simulation
+#AR
+set.seed(1234)
+ar1 <- arima.sim(list(order = c(1,0,0), ar = c(0.5)), n = 200)
+ts.plot(ar1)
+acf(ar1)
+pacf(ar1)
+
+set.seed(1234)
+ar2 <- arima.sim(list(order = c(2,0,0), ar = c(0.5, -0.3)), n = 200)
+ts.plot(ar2)
+acf(ar2)
+pacf(ar2)
+
+#MA
+set.seed(1234)
+ma1 <- arima.sim(list(order = c(0,0,1), ma = c(0.8)), n = 200)
+ts.plot(ma1)
+acf(ma1)
+pacf(ma1)
+
+set.seed(1234)
+ma2 <- arima.sim(list(order = c(0,0,2), ma = c(0.8, -0.5)), n = 200)
+ts.plot(ma2)
+acf(ma2)
+pacf(ma2)
+
+#ARMA
+set.seed(1234)
+arma <- arima.sim(list(order = c(1,0,1), ar = c(0.8), ma = c(-0.3)), n = 200)
+ts.plot(arma)
+acf(arma)
+pacf(arma)
+
+#ARIMA
+set.seed(1234)
+arima <- arima.sim(list(order = c(1,1,1), ar = c(0.8), ma = c(-0.3)), n = 200)
+ts.plot(arima)
+acf(arima)
+pacf(arima)
+
+#Differencing
+diff <- diff(arima)
+ts.plot(diff)
+acf(diff)
+pacf(diff)
