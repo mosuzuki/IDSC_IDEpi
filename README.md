@@ -14,3 +14,4 @@
 | 2019-11-5 | 1800-1900	| NIID B1	| Time series analysis IV: AR, MA, ARMA and ARIMA |
 | 2019-11-12 | 1800-1900 | NIID B1	| Time series analysis V: ARIMA model fitting and forecasting |
 | 2019-11-19 | 1800-1900 | NIID B1	| Time series analysis VI: Confidence interval and prediction interval |
+| 2019-11-26 | 1800-1900 | NIID B1	| Time series analysis VII: Time series models and seasonality |
