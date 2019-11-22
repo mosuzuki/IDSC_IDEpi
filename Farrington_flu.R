@@ -90,8 +90,10 @@ data$alert2[data$alert2>=cutoff] <- 0
 #Plot
 layout(1:2)
 plot(data$t, data$d, type="h", lwd=5, col="grey", xlim=c(104,311), 
-     ylim=c(0,1400), main = "Hidden Marcov Model", xlab="Year", ylab="Flu deaths", xaxt="n")
+     ylim=c(0,1400), main = "Hidden Markov Model", xlab="Year", ylab="Flu deaths", xaxt="n")
 axis(1, at=0:5*52+12, labels=2011:2016)
 points(data$t, data$alert2, pch=2, col="red")
 
 matplot(posterior(fit)[,-1], type='l', xlim=c(104,311), main="Probability of outbreak", ylab='Probability of outbreak')
+
+###
