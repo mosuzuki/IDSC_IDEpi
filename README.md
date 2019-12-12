@@ -16,5 +16,5 @@
 | 2019-11-19 | 1800-1900 | NIID B1	| Time series analysis VI: Confidence interval and prediction interval |
 | 2019-11-26 | 1800-1900 | NIID B1	| Time series analysis VII: Time series models and seasonality |
 | 2019-12-3 | 1800-1900 | NIID B1	| Time series analysis VIII: Vaccine impact studies |
-| 2019-12-11 | 1800-1900 | NIID B1	| Time series analysis: Review I-VIII |
+| 2019-12-11 | 1800-1900 | FETP Room	| Time series analysis: Review I-VIII |
 | 2019-12-19 | 1730-1900 | NIID B1	| Basic statistics and graphics using R/RStudio |
