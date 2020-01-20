@@ -19,4 +19,5 @@
 | 2019-12-11 | 1800-1900 | FETP Room	| Time series analysis: Review I-VIII |
 | 2019-12-19 | 1730-1900 | NIID B1	| Basic statistics and graphics using R/RStudio |
 | 2020-1-8 | 1800-1900 | NIID B1	| GIS for ID epidemiology I: Introduction to QGIS |
+| 2020-1-21 | 1800-1900 | NIID B1	| Transmission of coronaviruses |
 | TBD | TBD | NIID B1	| GIS for ID epidemiology II: Mapping |
