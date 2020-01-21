@@ -82,7 +82,7 @@ SEIR <- function(t, t0, parms) {
 
 
 param <- param.dcm(R0 = c(0.9, 1.2, 3), e.dur = 3, i.dur = 5, cfr = 0.01)
-init <- init.dcm(s.num = 19000000, e.num = 100, i.num = 0, r.num = 0,
+init <- init.dcm(s.num = 19000000, e.num = 1, i.num = 0, r.num = 0,
                  se.flow = 0, ei.flow = 0, ir.flow = 0, d.flow = 0)
 control <- control.dcm(nsteps = 50, dt = 1, new.mod = SEIR)
 mod <- dcm(param, init, control)
