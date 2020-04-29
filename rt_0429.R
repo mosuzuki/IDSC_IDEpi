@@ -3,11 +3,11 @@ library("ggplot2")
 library("R0")
 library("earlyR")
 
-setwd("C:/Users/motoisuzuki/Dropbox/NIID2019/ncov/analysis/")
+setwd("C:/xxxxx")
 cov <- read.csv("cov0428.csv")
 
 #Tokyo and surrounding prefectures
-cov <- subset(cov, pref=="“Œ‹ž"|pref=="_“Þì"|pref=="é‹Ê"|pref=="ç—t")
+#cov <- subset(cov, pref=="â€œÅ’â€¹Å¾"|pref=="Â_â€œÃžÂÃ¬"|pref=="ÂÃ©â€¹ÃŠ"|pref=="ÂÃ§â€”t")
 
 cov$ons <- as.Date(cov$ons,format="%m/%d/%y")
 cov$rep <- as.Date(cov$rep,format="%m/%d/%y")
