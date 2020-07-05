@@ -20,4 +20,4 @@
 | 2019-12-19 | 1730-1900 | NIID B1	| Basic statistics and graphics using R/RStudio |
 | 2020-1-8 | 1800-1900 | NIID B1	| GIS for ID epidemiology I: Introduction to QGIS |
 | 2020-1-21 | 1800-1900 | NIID B1	| Transmission of coronaviruses |
-| TBD | TBD | NIID B1	| GIS for ID epidemiology II: Mapping |
+| 2020-7-6 | 1800-1900 | NIID B1	| Review: Basic statistics and graphics using R/RStudio |
