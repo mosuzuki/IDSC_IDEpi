@@ -21,4 +21,4 @@
 | 2020-1-8 | 1800-1900 | NIID B1	| GIS for ID epidemiology I: Introduction to QGIS |
 | 2020-1-21 | 1800-1900 | NIID B1	| Transmission of coronaviruses |
 | 2020-7-6 | 1800-1900 | NIID B1	| Review: Basic statistics and graphics using R/RStudio |
-| 2020-7-7 | 1800-1900 | NIID B1	| Excess mortality I: Serfling Model |
+| 2020-7-7 | 1800-1900 | Online	| Excess mortality I: Serfling Model |
