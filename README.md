@@ -23,3 +23,4 @@
 | 2020-7-6 | 1800-1900 | NIID B1	| Review: Basic statistics and graphics using R/RStudio |
 | 2020-7-7 | 1800-1900 | Online	| Excess mortality I: Serfling model |
 | 2020-7-16 | 1630-1700 | Online	| Basic and effective reproduction number |
+| 2020-8-11 | 1800-1830 | Online	| CFR of COVID-19 |
