@@ -1,6 +1,4 @@
 library("dplyr")
-library("mgcv")
-library("ConnMatTools")
 library("RCurl")
 library("ggplot2")
 
@@ -15,7 +13,6 @@ caseInc <- read.csv(text=case)
 colnames(caseInc) <- c("date", "case")
 
 caseInc$date <- as.Date(caseInc$date)
-
 
 ##############################
 ###MHLW daily death dataset###
@@ -40,7 +37,6 @@ dfInc[is.na(dfInc)] <- 0
 dfInc$cumcase <- cumsum(dfInc$case)
 
 ###Plot###
-
 g1 <- ggplot(dfInc, aes(x=date))+
   geom_line(stat="identity", aes(y=cumcase), colour="blue", lwd=1.2)+
   xlab("Date")+
@@ -50,12 +46,8 @@ g1 <- ggplot(dfInc, aes(x=date))+
   theme(axis.title.x = element_text(size = rel(1.8), angle = 0),
         axis.title.y = element_text(size = rel(1.8), angle = 90),
         axis.text.x = element_text(size = 14),
-        axis.text.y = element_text(size = 14),
-        legend.text = element_text(colour="black", size=14, 
-                                   face="bold"),
-        legend.position = c(0.3,0.8),
-        legend.background = element_rect(fill="lightgrey", 
-                                         size=0.5, linetype="solid"))
+        axis.text.y = element_text(size = 14))
+
 g1
 
 g2 <- ggplot(dfInc, aes(x=date))+
@@ -67,12 +59,8 @@ g2 <- ggplot(dfInc, aes(x=date))+
   theme(axis.title.x = element_text(size = rel(1.8), angle = 0),
         axis.title.y = element_text(size = rel(1.8), angle = 90),
         axis.text.x = element_text(size = 14),
-        axis.text.y = element_text(size = 14),
-        legend.text = element_text(colour="black", size=14, 
-                                   face="bold"),
-        legend.position = c(0.3,0.8),
-        legend.background = element_rect(fill="lightgrey", 
-                                         size=0.5, linetype="solid"))
+        axis.text.y = element_text(size = 14))
+
 g2
 
 ####################################
@@ -144,14 +132,11 @@ g3 <- ggplot(data=subset(dfInc, dfInc$date>as.Date("2020-02-14")), aes(x=date))+
                                   "2020-07-01", "2020-08-01")))+
   theme(axis.title.x = element_text(size = rel(1.8), angle = 0),
         axis.title.y = element_text(size = rel(1.8), angle = 90),
-        axis.text.x = element_text(size=14),
-        axis.text.y = element_text(size = 16),
-        legend.text = element_text(colour="black", size=14, 
-                                   face="bold"),
+        axis.text.x = element_text(size = 14),
+        axis.text.y = element_text(size = 14),
         legend.position = "none")
 
 g3
-
 
 ############################
 ###Mean CFR by the period###
