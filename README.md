@@ -27,3 +27,4 @@
 | 2020-8-14 | 1800-1830 | Online	| Basic and effective reproduction number II|
 | 2020-8-20 | 1800-1830 | Online	| CFR of COVID-19 II|
 | 2020-8-26 | 1600-1700 | Online	| Covid-19 surveillance |
+| 2020-8-27 | 1600-1630 | Online	| CFR of COVID-19 III|
